@@ -190,7 +190,7 @@ if (CLAIRE_BLOGMODE) {
                         <form name="postform" id="postform" action="?do=post" method="post" enctype="multipart/form-data">
                         <input type="hidden" name="parent" value="'.htmlspecialchars($parent).'">
                         <table class="postform">
-                                <tbody><tr><td class="postblock" title="Optional [!password]">Name</td>
+                                <tbody><tr><td class="postblock" title="Optional [#password]">Name</td>
                                 <td><input type="text" name="name" size="28" maxlength="75">
                                 </td></tr>
         ';
@@ -218,12 +218,11 @@ if (CLAIRE_BLOGMODE) {
                 $body .= '
                                         <tr>
                                                 <td class="postblock" title="Please copy the text to show you\'re a human.">
-                                                        Verification
+                                                        <img src="captcha_png.php?key='.$captcha_key.'" />
                                                 </td>
                                                 <td>
                                                         <input type="hidden" name="captcha_ex" value="'.$captcha_expect.'" />
                                                         <input type="text" name="captcha_out" size="8" />
-                                                        <img src="captcha_png.php?key='.$captcha_key.'" />
                                                 </td>
                                         </tr>
                 ';
@@ -268,7 +267,7 @@ elseif (!$parent && LOGGED_IN) {
                         <table class="postform">
                                 <tbody>
                                         <tr>
-                                                <td class="postblock" title="Optional [!password]">Name</td>
+                                                <td class="postblock" title="Optional [#password]">Name</td>
                                                 <td>
                                                         <input type="text" name="name" size="28" maxlength="75">
                                                 </td>
@@ -298,12 +297,11 @@ elseif (!$parent && LOGGED_IN) {
                 $body .= '
                                         <tr>
                                                 <td class="postblock" title="Please copy the text to show you\'re a human.">
-                                                        Verification
+                                                        <img src="captcha_png.php?key='.$captcha_key.'" />
                                                 </td>
                                                 <td>
                                                         <input type="hidden" name="captcha_ex" value="'.$captcha_expect.'" />
                                                         <input type="text" name="captcha_out" size="8" />
-                                                        <img src="captcha_png.php?key='.$captcha_key.'" />
                                                 </td>
                                         </tr>
                 ';
@@ -349,7 +347,7 @@ $body = '
                         <form name="postform" id="postform" action="?do=post" method="post" enctype="multipart/form-data">
                         <input type="hidden" name="parent" value="'.htmlspecialchars($parent).'">
                         <table class="postform">
-                                <tbody><tr><td class="postblock" title="Optional [!password]">Name</td>
+                                <tbody><tr><td class="postblock" title="Optional [#password]">Name</td>
                                 <td><input type="text" name="name" size="28" maxlength="75">
                                 </td></tr>
         ';
@@ -377,12 +375,11 @@ $body = '
                 $body .= '
                                         <tr>
                                                 <td class="postblock" title="Please copy the text to show you\'re a human.">
-                                                        Verification
+                                                        <img src="captcha_png.php?key='.$captcha_key.'" />
                                                 </td>
                                                 <td>
                                                         <input type="hidden" name="captcha_ex" value="'.$captcha_expect.'" />
                                                         <input type="text" name="captcha_out" size="8" />
-                                                        <img src="captcha_png.php?key='.$captcha_key.'" />
                                                 </td>
                                         </tr>
                 ';
