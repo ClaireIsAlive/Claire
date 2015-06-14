@@ -1,2 +1,4 @@
 # Claire
-Lightweight anonymous imageboard script written in PHP and SQLite. Based on TinyIB-mappy.
+Lightweight PHP imageboard script with SQLite database. Based on TinyIB & TinyIB-mappy code.
+
+Demo: http://demo.claire.ws
