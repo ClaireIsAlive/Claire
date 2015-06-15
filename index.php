@@ -1,18 +1,18 @@
 <?php
 // --Config Start-- 
 define('CLAIRE_TEXTMODE', false); //true disallow images.
-define('CLAIRE_BLOGMODE', false); //true allow creating thread ony by admin & mod.
+define('CLAIRE_BLOGMODE', false); //true allow creating thread only by admin & mod.
 define('TINYIB_PAGETITLE', 'Claire Imageboard');
 define('TINYIB_ADMINPASS',  "adminpassword");
 define('TINYIB_MODPASS',    "modpassword"); // Leave blank to disable
-define('TINYIB_THREADSPERPAGE', 13);
+define('TINYIB_THREADSPERPAGE', 8);
 define('TINYIB_REPLIESTOSHOW',  3);
 define('TINYIB_MAXTHREADS',     0);    // 0 disables deleting old threads
-define('TINYIB_DELETE_TIMEOUT', 600);  // Seconds for deleting own posts
+define('TINYIB_DELETE_TIMEOUT', 1200);  // Seconds for deleting own posts
 define('TINYIB_MAXPOSTSIZE',    16000); // Characters
 define('TINYIB_RATELIMIT',      7);   // Delay between posts from same IP
 define('TINYIB_TRIPSEED',   "1231");
-define('TINYIB_USECAPTCHA',   false); // just use it.
+define('TINYIB_USECAPTCHA',   true); // just use it.
 define('TINYIB_CAPTCHASALT',  'CAPTCHASALT');
 define('TINYIB_THUMBWIDTH',  200);
 define('TINYIB_THUMBHEIGHT', 300);
